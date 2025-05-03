@@ -157,6 +157,10 @@ body
                 0 0 25px rgb(6, 84, 194),
                 0 0 50px cyan;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: 5s ease;
+    opacity: 0;
+    animation: slideLeft 2.5s ease forwards;
+    animation-delay: calc(.2s * var);
 }
 
 .profile-img img:hover {
@@ -200,23 +204,6 @@ body
     margin-bottom: 4rem;
 }
 
-.about-img img {
-    max-width: 400px;
-    border-radius: 35%; 
-    border: 5px solid rgb(255, 255, 255); 
-    box-shadow: 0 0 5px rgb(39, 77, 201),
-                0 0 25px rgb(6, 84, 194),
-                0 0 50px cyan;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.about-img img:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 5px cyan,
-                0 0 25px cyan,
-                0 0 50px cyan,
-                0 0 100px cyan;
-}
 #services {
     color: aliceblue;
     font-size: 20px;
