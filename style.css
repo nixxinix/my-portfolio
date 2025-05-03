@@ -49,6 +49,9 @@ body
 }
 .navbar a:hover{
     color: #0ef;
+    text-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan;
 }
 .home{
     position: relative;
@@ -146,6 +149,24 @@ body
                 0 0 200px cyan;
 }
 
+.profile-img img {
+    max-width: 400px;
+    border-radius: 35%; 
+    border: 5px solid rgb(255, 255, 255); 
+    box-shadow: 0 0 5px rgb(39, 77, 201),
+                0 0 25px rgb(6, 84, 194),
+                0 0 50px cyan;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-img img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan;
+}
+
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -177,6 +198,24 @@ body
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
+}
+
+.about-img img {
+    max-width: 400px;
+    border-radius: 35%; 
+    border: 5px solid rgb(255, 255, 255); 
+    box-shadow: 0 0 5px rgb(39, 77, 201),
+                0 0 25px rgb(6, 84, 194),
+                0 0 50px cyan;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about-img img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan;
 }
 #services {
     color: aliceblue;
